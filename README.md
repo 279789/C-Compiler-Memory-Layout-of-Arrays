@@ -1,7 +1,7 @@
 <!---
 {
   "id": "b3531ed1-472f-4448-b60b-c58b9671a0a2",
-  "depends_on": ["df08f299-5635-4e4d-8af1-6323bcf4a828"],
+  "depends_on": ["c32afdd3-48c3-4ff2-b5f7-a2179a2f8093"],
   "author": "Stephan Bökelmann",
   "first_used": "2025-07-03",
   "keywords": ["C", "arrays", "memory layout", "RAM consumption", "addressing"]
