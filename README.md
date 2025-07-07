@@ -72,7 +72,7 @@ Assume the base address of `arr` is `0x1000` and `sizeof(int) = 4` bytes.
    $$
 2. **Draw memory layout diagram**:
 
-   ```mermaid
+```mermaid
    graph TB
      subgraph arr [arr (base 0x1000)]
        direction LR
@@ -83,6 +83,7 @@ Assume the base address of `arr` is `0x1000` and `sizeof(int) = 4` bytes.
        A4["arr[4]\n0x1010–0x1013"]
      end
    ```
+   
 3. **Compute address of `arr[3]`**:
 
    * Byte offset: `3 × 4 = 12`
