@@ -74,7 +74,7 @@ Assume the base address of `arr` is `0x1000` and `sizeof(int) = 4` bytes.
 
 ```mermaid
    graph TB
-     subgraph arr [arr (base 0x1000)]
+     subgraph arr [arr base 0x1000]
        direction LR
        A0["arr[0]\n0x1000–0x1003"]
        A1["arr[1]\n0x1004–0x1007"]
