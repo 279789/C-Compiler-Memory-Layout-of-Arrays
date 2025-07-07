@@ -163,11 +163,11 @@ graph TB
 
 ## Questions
 
-1. **Memory Calculation:** What is the total memory (in bytes) occupied by an array `double arr[3]` on a platform where `sizeof(double) = 8`? Show your calculation.
-2. **Address Computation:** Given a base address of `0x4000`, what is the address of `arr[4]` for an `int arr[10]`? Assume `sizeof(int) = 4`.
-3. **Pointer vs. Byte Arithmetic:** Explain how pointer arithmetic differs from byte-wise arithmetic when adding an integer to a pointer in C.
-4. **Char Array Access:** If `char c[5]` starts at `0x5000`, what is the memory address accessed by `*(c + 2)`?
-5. **Multidimensional Layout:** Describe how the memory layout of a multidimensional array `int mat[2][3]` appears in RAM, and compute the address of `mat[1][2]` given the base address of `0x6000` and `sizeof(int) = 4`.
+1. **Memory Calculation:** What is the total memory (in bytes) occupied by an array `double arr[3]` on a platform where `sizeof(double) = 8`? Show your calculation. *Would be 3 times 8byte = 24 byte*
+2. **Address Computation:** Given a base address of `0x4000`, what is the address of `arr[4]` for an `int arr[10]`? Assume `sizeof(int) = 4`. *4 Times 4 Byte is 16 Byte. Bit 0-3 is 0, 4-7 is 1, 8-11 2 . 12-15= 3, 16-19 is 4. So address is 0x4010*
+3. **Pointer vs. Byte Arithmetic:** Explain how pointer arithmetic differs from byte-wise arithmetic when adding an integer to a pointer in C. *The pointer arithmetic is scaled bythe size of datatypes.
+4. **Char Array Access:** If `char c[5]` starts at `0x5000`, what is the memory address accessed by `*(c + 2)`? Would be 0x5000+7times 1 = 0x5007.
+5. **Multidimensional Layout:** Describe how the memory layout of a multidimensional array `int mat[2][3]` appears in RAM, and compute the address of `mat[1][2]` given the base address of `0x6000` and `sizeof(int) = 4`. The array has three "rows" each having 4 elements. Each row is memorized one after another. so for mat [1][2] woud be the second row, third element. So 3+2=5th element.*4byte= 20byte address is 0x6014
 
 ## Advice
 
