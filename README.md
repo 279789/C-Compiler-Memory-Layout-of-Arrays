@@ -113,7 +113,7 @@ Assume the base address of `buf` is `0x2000` and `sizeof(char) = 1` byte.
 
 ```mermaid
 graph TB
-  subgraph buf [buf (base 0x2000)]
+  subgraph buf [buf base 0x2000]
     direction LR
     C0["buf[0]\n0x2000"] --> C1["buf[1]\n0x2001"] --> C2["buf[2]\n0x2002"] --> C3["buf[3]\n0x2003"] --> C4["buf[4]\n0x2004"] --> C5["buf[5]\n0x2005"] --> C6["buf[6]\n0x2006"] --> C7["buf[7]\n0x2007"] --> C8["buf[8]\n0x2008"] --> C9["buf[9]\n0x2009"]
   end
@@ -147,7 +147,7 @@ Assume the base address of `data` is `0x3000` and `sizeof(float) = 4` bytes.
 
 ```mermaid
 graph TB
-  subgraph data [data (base 0x3000)]
+  subgraph data [data base 0x3000]
     direction LR
     F0["data[0]\n0x3000–0x3003"]
     F1["data[1]\n0x3004–0x3007"]
